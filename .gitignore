@@ -1,0 +1,4 @@
+*.pem
+*.crx
+*.xpi
+ext-ff/web-ext-artifacts

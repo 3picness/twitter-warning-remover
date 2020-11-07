@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "Twitter Warning Remover",
+  "version": "1.0.1",
+
+  "description": "Tired of the constant election warnings that you get from Twitter? This extension will fully remove them.",
+
+  "icons": {
+    "128": "icons/128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+	{"run-at": "document_start",
+	 "matches": ["*://twitter.com/*", "*://*.twitter.com/*"],
+	 "js": ["twitter.js"]
+	}
+  ],
+  "permissions": ["*://twitter.com/*", "*://*.twitter.com/*", "webRequest", "webRequestBlocking", "activeTab"]
+}
