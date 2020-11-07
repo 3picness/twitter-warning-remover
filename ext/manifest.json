@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Twitter Warning Remover",
-  "version": "1.0.3",
+  "version": "1.0.4",
 
   "description": "Tired of the constant election warnings that you get from Twitter? This extension will fully remove them.",
 
